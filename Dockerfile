@@ -12,7 +12,7 @@ EXPOSE 8000
 
 ENV lbg.test.py=value
 
-ENTRYPOINT ["python", "app.py"]
+ENTRYPOINT ["python", "lbg.py"]
 
 
 
