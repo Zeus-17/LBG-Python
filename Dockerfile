@@ -7,7 +7,7 @@ COPY lbg.py /app/lbg.py
 
 EXPOSE 8000
 
-ENV lbg.test.py=value
+ENV lbg.test.py
 
 ENTRYPOINT ["python", "lbg.py"]
 
