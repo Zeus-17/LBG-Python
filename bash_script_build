@@ -1,0 +1,17 @@
+echo "Build app"
+
+pip install -r requirements.txt
+
+echo "Build Docker Image"
+
+docker build -t sprint2 .
+
+echo "Modify application"
+
+cp /LBG-Python/new_sprint2 /LBG-Python/sprint2
+
+echo "Build new docker image"
+
+docker build -t sprint2 .
+
+echo "Build and Docker complete"
